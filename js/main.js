@@ -76,7 +76,44 @@ $(document).ready(function () {
 });
 
 
+//for text view
+function toggleReadMore(button) {
+    const card = button.closest('.blog-card');
+    const moreText = card.querySelector('.more-text');
+
+    if (moreText.style.display === "none" || !moreText.style.display) {
+        moreText.style.display = "inline";
+        button.textContent = "Read Less";
+    } else {
+        moreText.style.display = "none";
+        button.textContent = "Read More";
+    }
+}
 
 
+//back to top button
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+    const halfway = 300; // Adjust this value based on when you want the button to appear
 
+    let shown = false;
 
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY > halfway && !shown) {
+        scrollTopBtn.classList.add("show");
+        shown = true;
+      }
+
+      if (scrollY <= halfway && shown) {
+        scrollTopBtn.classList.remove("show");
+        shown = false;
+      }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });

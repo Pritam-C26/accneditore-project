@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Green Recycling</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -40,22 +41,22 @@
                     <li class="nav-item">
                         <a class="nav-link " href="index.html">Home</a>
                     </li>
-       
+
                     <li class="nav-item">
                         <a class="nav-link" href="about-us.html">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Initiatives</a>
+                        <a class="nav-link" href="initiative.html">Initiatives</a>
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">Our Offerings</a>
+                        <a class="nav-link" href="offering.html">Our Offerings</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
 
@@ -65,12 +66,13 @@
 
     <!-- Hero Section -->
     <section class="hero-section position-relative">
-        <img src="image/banner-image.jpg" alt="Green Recycling Hero" class="img-fluid hero-image">
+        <video src="image/home-video.mp4" alt="banner-video" class="img-fluid hero-video" autoplay muted loop>
+        </video>
         <div class="overlay"></div>
         <div class="hero-content text-center wow fadeInUp" data-wow-delay="0.2s">
             <h1>H.M.E-WASTE MANAGEMENT</h1>
-            <p>We are committed to providing the best waste management services to our clients.</p>
-            <a href="#" class="btn btn-lg mt-5 wow fadeInUp" data-wow-delay="0.4s">Explore Our Services</a>
+            <p>Transforming waste into opportunity—one solution at a time</p>
+            <a href="offering.html" class="btn btn-lg mt-5 wow fadeInUp" data-wow-delay="0.4s">Explore Our Services</a>
         </div>
     </section>
 
@@ -91,12 +93,12 @@
                         promote eco-friendly practices, educate the public on the importance of recycling, and work
                         together for a greener future. Join us in making a positive difference—one recycled item at a
                         time!
-
-                        <a href="about-us.html" class="button">Learn More</a>
+                    </p>
+                    <a href="about-us.html" class="button mt-5">Learn More</a>
                 </div>
 
                 <div class="col-lg-6 mt-5">
-                    <img src="image/banner.jpg" alt="About Us Image" class="img-fluid wow fadeInRight"
+                    <img src="image/banner.jpg" alt="About-Image" class="img-fluid wow fadeInRight"
                         data-wow-delay="0.3s">
                 </div>
 
@@ -113,17 +115,17 @@
                 <div class="row">
                     <div class="col-md-4 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="service-box">
-                            <img src="image/recycle-image.jpeg" alt="Recycling Service" class="img-fluid">
+                            <img src="image/recycle-image.jpeg" alt="Recycling-Service-Image" class="img-fluid">
                             <h3 class="text-center">Recycling Services</h3>
                             <p>We provide comprehensive recycling services for various materials, including paper,
                                 plastic, metal, and electronics. </p>
-                                
+
                             </p>
                         </div>
                     </div>
                     <div class="col-md-4 wow fadeInRight" data-wow-delay="0.4s">
                         <div class="service-box">
-                            <img src="image/waste-process.jpg" alt="Waste Management Service" class="img-fluid">
+                            <img src="image/waste-process.jpg" alt="Waste-Management-image" class="img-fluid">
                             <h3 class="text-center">Waste Management</h3>
                             <p>Our waste management solutions help businesses and communities manage their waste
                                 effectively
@@ -132,7 +134,7 @@
                     </div>
                     <div class="col-md-4 wow fadeInRight" data-wow-delay="0.6s">
                         <div class="service-box">
-                            <img src="image/consultancy.jpg" alt="Consultation Service" class="img-fluid">
+                            <img src="image/consultancy.jpg" alt="Consultation-Service-Image" class="img-fluid">
                             <h3 style="font-size: 29px; " class="text-center">Consultation Services</h3>
                             <p>We offer expert consultation to help you develop and implement effective waste reduction
                                 and
@@ -142,7 +144,7 @@
                 </div>
 
                 <div class="text-center mt-4">
-                    <a href="#" class="btn btn-lg wow fadeInUp" data-wow-delay="0.8s">View Initiatives</a>
+                    <a href="initiative.html" class="btn btn-lg wow fadeInUp" data-wow-delay="0.8s">View Initiatives</a>
 
                 </div>
             </div>
@@ -175,7 +177,8 @@
         <div class="container">
             <div class="client-section">
                 <h2 class="wow fadeInDown" data-wow-delay="0.2s">Our Clients</h2>
-                <p class="text-center wow fadeInDown" data-wow-delay="0.4s">We are proud to work with a diverse range of clients, from local businesses to
+                <p class="text-center wow fadeInDown" data-wow-delay="0.4s">We are proud to work with a diverse range of
+                    clients, from local businesses to
                     international corporations, all committed to sustainability and responsible waste management.</p>
 
                 <!-- Owl Carousel container -->
@@ -189,8 +192,8 @@
 
                 <!-- Custom navigation buttons -->
                 <div class="custom-nav">
-                    <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button id="prev" aria-label="Previous-client"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="next" aria-label="Next-client"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
 
             </div>
@@ -206,33 +209,38 @@
             <div class="row">
                 <div class="col-lg-4 mt-5 wow fadeInLeft" data-wow-delay="0.3s">
                     <div class="blog-card">
-                        <img src="image/blog-1.jpg" alt="Blog 1" class="img-fluid">
+                        <img src="image/blog-1.jpg" alt="Blog-1" class="img-fluid">
                         <h3>Understanding the Importance of Recycling</h3>
                         <p>Recycling is crucial for reducing waste and conserving resources. Learn how you can make a
                             difference.</p>
-                        <a href="#" class="btn btn-sm">Read More</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 mt-5 wow fadeInLeft" data-wow-delay="0.5s">
                     <div class="blog-card">
-                        <img src="image/blog-2.jpg" alt="Blog 2" class="img-fluid">
+                        <img src="image/blog-2.jpg" alt="Blog-2" class="img-fluid">
                         <h3>Innovative Waste Management Solutions</h3>
                         <p>Discover the latest trends and technologies in waste management that are shaping a
                             sustainable
                             future.</p>
-                        <a href="#" class="btn btn-sm">Read More</a>
+
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-5 wow fadeInLeft" data-wow-delay="0.7s">
                     <div class="blog-card">
-                        <img src="image/blog-3.jpg" alt="Blog 3" class="img-fluid">
+                        <img src="image/blog-3.jpg" alt="Blog-3" class="img-fluid">
                         <h3>How to Reduce Your Carbon Footprint</h3>
                         <p>Simple steps you can take to minimize your environmental impact and contribute to a greener
                             planet.</p>
-                        <a href="#" class="btn btn-sm">Read More</a>
+
                     </div>
                 </div>
+            </div>
+            <div class="text-center mt-4 wow fadeInUp" data-wow-delay="0.9s">
+                <a href="offering.html" class="btn btn-sm">View More</a>
+            </div>
+        </div>
     </section>
 
 
@@ -240,11 +248,15 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2>Let’s build a cleaner, greener future—get in touch with us today.</h2>
-                <a href="#" class="button">Get In Touch</a>
+                <a href="contact.html" class="button">Get In Touch</a>
             </div>
         </div>
     </section>
 
+
+    <!-- back to top button -->
+    <button id="scrollTopBtn" class="scroll-top-button">🡹</button>
+    <!-- back to top button -->
 
     <footer class="footer">
         <div class="container">
@@ -274,17 +286,16 @@
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-
                     </div>
 
 
                     <div class="quick-links">
                         <h5 class="mt-4">Quick Links</h5>
                         <ul class="list-unstyled ">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Initiatives</a></li>
-                            <li><a href="#">Our Offerings</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="initiative.html">Initiatives</a></li>
+                            <li><a href="offering.html">Our Offerings</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
