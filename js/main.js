@@ -93,7 +93,7 @@ function toggleReadMore(button) {
 
 //back to top button
   const scrollTopBtn = document.getElementById("scrollTopBtn");
-    const halfway = 300; // Adjust this value based on when you want the button to appear
+    const halfway = 300; 
 
     let shown = false;
 
